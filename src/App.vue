@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" class="container-fluid">
     <stopwatch :times="times"></stopwatch>
     <div class="row">
       <div class="col-6">
