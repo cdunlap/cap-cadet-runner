@@ -5,13 +5,13 @@
     </div>
     <div class="col-2 actions">
       <b-button-group>
-        <b-button v-if="!running" @click="start">
+        <b-button v-if="!running" @click="start" size="lg" variant="success">
           <icon name="play"></icon>
         </b-button>
-        <b-button v-if="running" @click="pause">
+        <b-button v-if="running" @click="pause" size="lg" variant="danger">
           <icon name="pause"></icon>
         </b-button>
-        <b-button @click="reset">
+        <b-button @click="reset" size="lg" variant="primary">
           <icon name="refresh"></icon>
         </b-button>
       </b-button-group>
@@ -94,6 +94,10 @@ export default {
         this.times[1] -= 60
       }
     }
+  },
+
+  beforeMount: function () {
+    this.display()
   }
 }
 </script>
