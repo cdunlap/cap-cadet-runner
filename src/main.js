@@ -3,6 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 
+// Bootstrap
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+
+// Icon
+import Icon from 'vue-awesome/components/Icon'
+Vue.component('icon', Icon)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -11,3 +19,6 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
