@@ -64,7 +64,9 @@ export default {
     reset: function () {
       this.running = false
       this.time = null
-      this.times = [0, 0, 0]
+      this.times[0] = 0
+      this.times[1] = 0
+      this.times[2] = 0
       this.display()
     },
 
