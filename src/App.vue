@@ -17,12 +17,16 @@
         <timetable :cadets="cadets" :lap-count="lapCount" :times="times" @removeCadet="removeCadet"></timetable>
       </div>
     </div>
+    <footer>
+      <p class="text-muted"><small>v 1.0.1 (7/30/2017) &middot; <a href="https://github.com/cdunlap/cap-cadet-runner" target="_blank">View Source and Guide On <icon name='github'></icon></a></small></p>
+    </footer>
   </div>
 </template>
 
 <script>
 import Stopwatch from './components/Stopwatch'
 import Timetable from './components/Timetable'
+import 'vue-awesome/icons/github'
 
 export default {
   name: 'app',
